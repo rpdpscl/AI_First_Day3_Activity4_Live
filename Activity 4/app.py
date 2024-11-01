@@ -7,7 +7,7 @@ from streamlit_extras.mention import mention
 st.set_page_config(page_title="News Summarizer Tool", page_icon="", layout="wide")
 
 with st.sidebar:
-    st.image('images/White_AI Republic.png')
+    st.image('Activity 4/images/White_AI Republic.png')
     openai.api_key = st.text_input('Enter OpenAI API token:', type='password')
     if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
         st.warning('Please enter your OpenAI API token!', icon='⚠️')
@@ -41,7 +41,7 @@ if options == "Home":
 elif options == "About Us":
     st.title("About Us")
     st.write("# AI Republic News Summarizer")
-    st.image('images/Pat.png')
+    st.image('Activity 4/images/Pat.png')
     st.write("## Empowering readers with quick, accurate news summaries")
     st.text("Connect with us via LinkedIn: https://www.linkedin.com/in/rpdpscl/")
     st.text("For more information, visit our website: www.airepublic.com")
